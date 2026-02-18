@@ -1,6 +1,7 @@
-import { Bus, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import logo from "@/assets/easytrip-logo.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -13,8 +14,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 border-b bg-card/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold text-primary">
-          <Bus className="h-6 w-6" />
-          <span>UCC VacRide</span>
+          <img src={logo} alt="EasyTrip" className="h-8 w-8 object-contain" />
+          <span>EasyTrip</span>
         </Link>
 
         {/* Desktop */}

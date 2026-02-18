@@ -22,7 +22,7 @@ const Confirmation = () => {
   };
 
   const whatsappMsg = encodeURIComponent(
-    `Hi! My UCC VacRide booking:\nRef: ${booking.reference}\nName: ${booking.fullName}\nTo: ${booking.destination}\nDate: ${booking.departureDate} ${booking.departureTime}\nPickup: Science Gate`
+    `Hi! My EasyTrip booking:\nRef: ${booking.reference}\nName: ${booking.fullName}\nTo: ${booking.destination}\nDate: ${booking.departureDate} ${booking.departureTime}\nPickup: Science Gate`
   );
 
   return (
