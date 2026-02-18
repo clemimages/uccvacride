@@ -19,7 +19,7 @@ const Index = () => {
         <div className="relative container py-20 md:py-32">
           <div className="max-w-xl">
             <span className="inline-block rounded-full gold-gradient px-4 py-1.5 text-xs font-bold text-accent-foreground mb-4">
-              🎓 UCC Students Only
+              🎓 Student's Choice
             </span>
             <h1 className="font-display text-4xl font-900 leading-tight text-primary-foreground md:text-5xl lg:text-6xl">
               Travel Home <br />This Vacation

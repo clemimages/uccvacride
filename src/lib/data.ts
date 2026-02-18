@@ -33,23 +33,23 @@ const BOOKINGS_KEY = "svta_bookings";
 const defaultTrips: Trip[] = [
   {
     id: "1", destination: "Accra", departureDate: "2026-03-15", departureTime: "06:00 AM",
-    pickupPoint: "Science Gate", fare: 120, bookingFee: 25, totalSeats: 45, bookedSeats: 12, status: "active",
+    pickupPoint: "Science Gate", fare: 120, bookingFee: 5, totalSeats: 45, bookedSeats: 12, status: "active",
   },
   {
     id: "2", destination: "Kumasi", departureDate: "2026-03-15", departureTime: "07:00 AM",
-    pickupPoint: "Old Site Junction", fare: 150, bookingFee: 25, totalSeats: 45, bookedSeats: 30, status: "active",
+    pickupPoint: "Old Site Junction", fare: 150, bookingFee: 5, totalSeats: 45, bookedSeats: 30, status: "active",
   },
   {
     id: "3", destination: "Takoradi", departureDate: "2026-03-14", departureTime: "05:30 AM",
-    pickupPoint: "Science Gate", fare: 60, bookingFee: 20, totalSeats: 30, bookedSeats: 28, status: "active",
+    pickupPoint: "Science Gate", fare: 60, bookingFee: 5, totalSeats: 30, bookedSeats: 28, status: "active",
   },
   {
     id: "4", destination: "Ho", departureDate: "2026-03-16", departureTime: "06:30 AM",
-    pickupPoint: "Casely-Hayford Junction", fare: 130, bookingFee: 25, totalSeats: 45, bookedSeats: 5, status: "active",
+    pickupPoint: "Casely-Hayford Junction", fare: 130, bookingFee: 5, totalSeats: 45, bookedSeats: 5, status: "active",
   },
   {
     id: "5", destination: "Tamale", departureDate: "2026-03-16", departureTime: "04:00 AM",
-    pickupPoint: "Science Gate", fare: 250, bookingFee: 30, totalSeats: 50, bookedSeats: 18, status: "active",
+    pickupPoint: "Science Gate", fare: 250, bookingFee: 5, totalSeats: 50, bookedSeats: 18, status: "active",
   },
 ];
 

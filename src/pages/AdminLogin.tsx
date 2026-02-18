@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Bus } from "lucide-react";
+import logo from "@/assets/easytrip-logo.png";
 
 const ADMIN_PASS = "admin2026"; // simple for MVP
 
@@ -23,7 +23,7 @@ const AdminLogin = () => {
     <div className="flex min-h-screen items-center justify-center bg-background p-4">
       <div className="w-full max-w-sm rounded-xl bg-card p-8 card-shadow">
         <div className="flex items-center justify-center gap-2 font-display text-xl font-bold text-primary mb-6">
-          <Bus className="h-6 w-6" /> Admin Login
+          <img src={logo} alt="EasyTrip" className="h-8 w-8 object-contain" /> Admin Login
         </div>
         <form onSubmit={handleLogin} className="space-y-4">
           <div>

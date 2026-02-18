@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Plus, Download, LogOut, Bus, Trash2 } from "lucide-react";
+import { Plus, Download, LogOut, Trash2 } from "lucide-react";
 import { getTrips, saveTrips, getBookings, type Trip, type Booking } from "@/lib/data";
 import { toast } from "sonner";
+import logo from "@/assets/easytrip-logo.png";
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
@@ -57,7 +58,7 @@ const AdminDashboard = () => {
       <header className="sticky top-0 z-50 border-b bg-card/90 backdrop-blur-md">
         <div className="container flex h-14 items-center justify-between">
           <div className="flex items-center gap-2 font-display font-bold text-primary">
-            <Bus className="h-5 w-5" /> Admin Panel
+            <img src={logo} alt="EasyTrip" className="h-6 w-6 object-contain" /> Admin Panel
           </div>
           <button onClick={logout} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
             <LogOut className="h-4 w-4" /> Logout
@@ -183,7 +184,7 @@ const TabBtn = ({ active, onClick, children }: { active: boolean; onClick: () =>
 
 const AddTripModal = ({ onClose, onAdd }: { onClose: () => void; onAdd: (t: Trip[]) => void }) => {
   const [form, setForm] = useState({
-    destination: "", departureDate: "", departureTime: "", pickupPoint: "Science Gate", fare: "", bookingFee: "25", totalSeats: "45",
+    destination: "", departureDate: "", departureTime: "", pickupPoint: "Science Gate", fare: "", bookingFee: "5", totalSeats: "45",
   });
 
   const update = (k: string, v: string) => setForm((p) => ({ ...p, [k]: v }));
